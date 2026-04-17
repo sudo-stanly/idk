@@ -10,5 +10,5 @@
 user = input("Enter a number: ")
 # print(user.split())
 
-newList = [char for char in user]
+newList = [int(char) for char in user]
 print(newList)
