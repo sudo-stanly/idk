@@ -13,5 +13,15 @@ nums = input("Enter a number: ")
 newList = [int(char) for char in nums]
 # print(newList)
 
+# for i in range(len(newList)):
+#     print(newList[i])
+    
+total = 0
 for i in range(len(newList)):
-    print(newList[i])
+    print(f"{newList[i]}",end="")
+    currentNum = newList[i]
+    total += currentNum
+    
+    if i < len(newList) - 1:
+        print(" + ", end="")
+print(f" = {total}")
