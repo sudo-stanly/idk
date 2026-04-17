@@ -7,8 +7,11 @@
 # print(HAKDOG())
 
 
-user = input("Enter a number: ")
+nums = input("Enter a number: ")
 # print(user.split())
 
-newList = [int(char) for char in user]
-print(newList)
+newList = [int(char) for char in nums]
+# print(newList)
+
+for i in range(len(newList)):
+    print(newList[i])
